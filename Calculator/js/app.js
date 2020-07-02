@@ -37,12 +37,12 @@ for(var i = 0; i < operator.length ; i++){
             if(this.id == "="){
                 var result = eval(history);
                 printoutput(result);
-                printhistory("");
+                printhistory(history);
             }
             else{
-                history = history + this.id;
-                printhistory(history);
-                printoutput("");
+                output = output + this.id;
+                printoutput(output);
+                printhistory("");
             }
         }   
     });
